@@ -34,7 +34,7 @@ public class LL {
             head = obj;
         }
     }
-    public void deletes(String data){
+    public void delete(String data){
         if(head == null) {
             System.out.println("List is Empty");return;
         } else if(data == head.key){
@@ -66,5 +66,13 @@ public class LL {
     }
     public static void main(String args[]){
         LL list = new LL();
+        list.Insert("Single");
+        list.Insert("Linked");
+        list.Insert("Linked");
+        list.Insert("List");
+        list.delete("Linked");
+        list.addFirst("Linked");
+        list.delete("Linked");
+        list.printList();
     }
 }
